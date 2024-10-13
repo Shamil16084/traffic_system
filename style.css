@@ -108,3 +108,27 @@ input[type="number"]:focus {
   background-color: #e0ffe0;
 }
 
+.info {
+  background-color: #fdff8d;
+  /* display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column; */
+
+  background-color: #dbdbdb;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+  border: 2px solid #004203;
+
+  width: 1300px;
+  margin: 0 auto;
+
+
+}
+
+.test{
+  margin-top: 0.1%;
+}

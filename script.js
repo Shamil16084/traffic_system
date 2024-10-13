@@ -3,7 +3,9 @@ const ctx = canvas.getContext('2d');
 
 // Set the canvas to cover the entire screen
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;// Vehicle types and weights
+canvas.height = window.innerHeight;
+
+// Vehicle types and weights
 const VEHICLE_TYPES = {
   "car": { weight: 1, color: 'blue' },
   "bus": { weight: 2, color: 'orange' },
@@ -101,11 +103,11 @@ function drawTrafficLights() {
   const lightWidth = 20;
   const lightHeight = 60;
 
-  // X-axis traffic light (horizontal road) placed at the beginning of the X-axis
+  // X-axis traffic light (horizontal road) placed next to the X-axis road
   ctx.fillStyle = xLight === 'red' ? 'red' : 'green';
   ctx.fillRect(10, canvas.height / 2 - lightHeight / 2, lightWidth, lightHeight);
 
-  // Y-axis traffic light (vertical road) placed at the beginning of the Y-axis
+  // Y-axis traffic light (vertical road) placed next to the Y-axis road
   ctx.fillStyle = yLight === 'red' ? 'red' : 'green';
   ctx.fillRect(canvas.width / 2 + roadWidth / 2 + 10, 10, lightWidth, lightHeight);
 }
@@ -175,4 +177,4 @@ function removeOffScreenCars(cars, direction) {
       }
     }
   }
-}  
+}
