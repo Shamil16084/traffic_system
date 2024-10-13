@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.container {
+  text-align: center;
+}
+
+.header{
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.xy_inputs{
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  border: 2px solid #004203;
+
+  width: 1300px;
+  margin: 0 auto;
+
+}
+
+.x_header{
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+
+.input-container {
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.x_inputs{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+.y_inputs{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+#intersection {
+  margin-top: 30px;
+  position: relative;
+}
+
+canvas {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+button {
+  /* padding: 10px 20px; */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  font-size: 28px;
+  border: 2px solid #004203;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="number"] {
+  width: 100px;
+  height: 20px;
+  padding: 8px;
+  font-size: 20px;
+  border: 2px solid #004203;
+  border-radius: 10px;
+  background-color: #f0fff0;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #45a049;
+  background-color: #e0ffe0;
+}
+

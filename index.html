@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Light Control System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Traffic Light Control Simulation</h1>
+      <div>
+
+        <!-- X-axis inputs -->
+        <div class="xy_inputs">
+          <div class="x_inputs">
+            <div class="x_header">
+              Enter the numbers for the Y-axis:
+            </div>
+            <div class="input-container">
+              <label for="xCars">Number of Regular Cars on X-axis: </label>
+              <input type="number" id="xCars" min="0" value="5">
+            </div>
+            <div class="input-container">
+              <label for="xBuses">Number of Buses on X-axis: </label>
+              <input type="number" id="xBuses" min="0" value="1">
+            </div>
+            <div class="input-container">
+              <label for="xUrgent">Number of Urgent Vehicles on X-axis: </label>
+              <input type="number" id="xUrgent" min="0" value="1">
+            </div>
+          </div>
+
+          <!-- Y-axis inputs -->
+          <div class="y_inputs">
+            <div class="x_header">
+              Enter the numbers for the X-axis:
+            </div>
+            <div class="input-container">
+              <label for="yCars">Number of Regular Cars on Y-axis: </label>
+              <input type="number" id="yCars" min="0" value="5">
+            </div>
+            <div class="input-container">
+              <label for="yBuses">Number of Buses on Y-axis: </label>
+              <input type="number" id="yBuses" min="0" value="1">
+            </div>
+            <div class="input-container">
+              <label for="yUrgent">Number of Urgent Vehicles on Y-axis: </label>
+              <input type="number" id="yUrgent" min="0" value="1">
+            </div>
+          </div>
+        </div>
+
+        <button onclick="startSimulation()">Start Simulation</button>
+
+        <div id="intersection">
+          <canvas id="canvas"></canvas>
+        </div>
+
+        <script src="script.js"></script>
+      </div>
+</body>
+
+</html>
+
